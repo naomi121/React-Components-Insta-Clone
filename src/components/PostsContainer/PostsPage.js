@@ -7,7 +7,9 @@ import "./Posts.css";
 const PostsPage = () => {
   return (
     <div className="posts-container-wrapper">
-      {/* map through data here */}
+     {props.postData.map(p => (
+      <Post post={p}/>
+     ))}
     </div>
   );
 };
